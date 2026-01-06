@@ -124,7 +124,6 @@ CFLAGS="%{optflags} -Wno-dev"
 
 %install
 %ninja_install -C build
-%fdupes %{buildroot}%{_prefix}
 
 %check
 pushd build
