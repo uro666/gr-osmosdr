@@ -18,6 +18,7 @@ BuildRequires:	cmake(gnuradio-iqbalance)
 BuildRequires:	boost-devel
 BuildRequires:	doxygen
 BuildRequires:	gnuradio-pmt-devel
+BuildRequires:	gnuradio-utils
 BuildRequires:	graphviz
 BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(gmp)
