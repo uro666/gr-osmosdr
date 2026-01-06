@@ -13,7 +13,7 @@ Patch0:		gr-osmosdr-remove-boost-system.patch
 
 BuildSystem:	cmake
 BuildRequires:	cmake
-BuildRequires:	cmake(gnuradio-funcube)
+BuildRequires:	cmake(funcube)
 BuildRequires:	cmake(gnuradio-iqbalance)
 BuildRequires:	boost-devel
 BuildRequires:	doxygen
@@ -117,6 +117,8 @@ CFLAGS="%{optflags} -Wno-dev"
 	-DGR_PKG_DOC_DIR=%{_docdir}/%{name} \
 	-DENABLE_DOXYGEN=ON \
 	-DENABLE_PYTHON=ON \
+	-DENABLE_FREESRP=OFF \
+	-DENABLE_XTRX=OFF \
 	-G Ninja
 %ninja_build
 
